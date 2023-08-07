@@ -23,7 +23,6 @@ services:
       - static_volume:/frontend_static
   gateway:
     image: mlpfluttershy/taski_gateway
-    env_file: .env
     volumes:
       - static_volume:/staticfiles/
     ports:
